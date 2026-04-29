@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration and Search Forms</title>
+  </head>
+  <body>
+    <!-- Main registration form (POST) -->
+    <h2>Registration Form</h2>
+    <form action="https://formspree.io/f/xpwzpzrd" method="post">
+      <p>
+        <label for="first_name">First Name</label><br />
+        <input type="text" id="first_name" name="first_name" required />
+      </p>
+
+      <p>
+        <label for="last_name">Last Name</label><br />
+        <input type="text" id="last_name" name="last_name" required />
+      </p>
+
+      <p>
+        <label>Gender</label><br />
+        <input
+          type="radio"
+          id="gender_male"
+          name="gender"
+          value="male"
+          required
+        />
+        <label for="gender_male">Male</label><br />
+        <input type="radio" id="gender_female" name="gender" value="female" />
+        <label for="gender_female">Female</label><br />
+        <input type="radio" id="gender_other" name="gender" value="other" />
+        <label for="gender_other">Other</label>
+      </p>
+
+      <p>
+        <label for="date_of_birth">Date of Birth</label><br />
+        <input type="date" id="date_of_birth" name="date_of_birth" required />
+      </p>
+
+      <p>
+        <label for="email">Email</label><br />
+        <input type="email" id="email" name="email" required />
+      </p>
+
+      <p>
+        <input type="submit" value="Submit Registration" />
+      </p>
+    </form>
+
+    <!-- Search form (GET) -->
+    <h2>Search Form</h2>
+    <form action="https://httpbin.org/get" method="get">
+      <p>
+        <label for="search_name">Search Name</label><br />
+        <input type="text" id="search_name" name="search_name" />
+      </p>
+
+      <p>
+        <input type="submit" value="Search" />
+      </p>
+    </form>
+  </body>
+</html>
