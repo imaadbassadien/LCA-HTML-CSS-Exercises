@@ -1,0 +1,58 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding-top: 60px; /* Adjusts body to account for fixed navbar height */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+h2 {
+  color: #2c3e50;
+  font-size: 20px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
